@@ -81,6 +81,7 @@ class TunePlayer(object):
         if not self.is_valid_tune(tune_str):
             raise Exception(f"tune '{tune_str}' contains illegal characters, valid chars are '{VALID_CHARS}'")
 
+        self.tune_str = tune_str
         self.notes = []
         i = 0
         while i < len(tune_str):
